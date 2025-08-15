@@ -6,9 +6,9 @@ set SetupDir=%~dp0.
 set ProjectDir=%~dp0.\..\..
 
 :: Version, size and hash. Sets which Mod Builder is used.
-set ModBuilderVer=2.1
-set ModBuilderArcSize=32209682
-set ModBuilderArcSha256=7357871f9e173373b4d7de8385a2cd23c8a3210cd103373830cd2460bfc7acd8
+set ModBuilderVer=2.3
+set ModBuilderArcSize=32144646
+set ModBuilderArcSha256=8d117731685a766516ddb01ca15e6ca3d173cc44d1c7edb4a7a24026833ed71c
 
 :: Misc path setup.
 set ModBuilderDir=%SetupDir%\.modbuilder\v%ModBuilderVer%
@@ -18,13 +18,7 @@ set ModBuilderArcUrl=https://github.com/TheSuperHackers/GeneralsModBuilder/relea
 
 :: The configuration files.
 set ConfigFiles=^
-    "%ProjectDir%\ModBundleItems.json" ^
-    "%ProjectDir%\ModBundleAudioItems.json" ^
-    "%ProjectDir%\ModBundleLanguageItems.json" ^
-    "%ProjectDir%\ModBundleCorePacks.json" ^
-    "%ProjectDir%\ModBundleFullPacks.json" ^
-    "%ProjectDir%\ModChangeLog.json" ^
-    "%ProjectDir%\ModFolders.json" ^
+    "%ProjectDir%\ModJsonFiles.json" ^
     "%SetupDir%\WindowsRunner.json" ^
     "%SetupDir%\WindowsTools.json"
 
